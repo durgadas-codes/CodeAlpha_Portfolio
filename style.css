@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #9333ea);
+  color: white;
+}
+
+/* Particle */
+#particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+/* Mouse glow */
+.cursor-glow {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(0,255,255,0.4), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -2;
+}
+
+/* Floating elements */
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.floating {
+  position: absolute;
+  font-size: 25px;
+  animation: floatUp linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes floatUp {
+  0% { bottom: -50px; }
+  100% { bottom: 100%; }
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(255,255,255,0.05);
+}
+
+nav a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-box {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+}
+
+/* Sections */
+.box {
+  margin: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.box:hover {
+  box-shadow: 0 0 25px #00f7ff;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+}
+
+.skills span:hover {
+  background: #00f7ff;
+  color: black;
+}
+
+/* Projects */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+.project.active {
+  box-shadow: 0 0 30px #00ffcc;
+}
+
+/* Contact */
+input, textarea {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #00f7ff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 20px #00f7ff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
